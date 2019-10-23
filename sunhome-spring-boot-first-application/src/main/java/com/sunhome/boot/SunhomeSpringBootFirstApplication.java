@@ -15,6 +15,7 @@ public class SunhomeSpringBootFirstApplication {
 
     @GetMapping("index")
     public String index() {
+        System.out.println(Thread.currentThread().getName());
         return "index";
     }
 
