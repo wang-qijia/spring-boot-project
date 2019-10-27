@@ -1,7 +1,9 @@
 package com.sunhome.boot;
 
+import com.sunhome.boot.annotation.EnableHelloWorld;
 import com.sunhome.boot.config.TestConfiguration;
 import com.sunhome.boot.entiy.BeanTest;
+import com.sunhome.boot.service.TransactionalServiceBean;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.boot.ApplicationArguments;
@@ -9,17 +11,34 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.lang.annotation.Annotation;
+import java.lang.reflect.AnnotatedElement;
+
 @RestController
-//@SpringBootApplication
-@EnableAutoConfiguration
+@EnableHelloWorld
+@SpringBootApplication
+//@EnableAutoConfiguration
+//@ComponentScan
+//@EnableTransactionManagement
 public class SunhomeSpringBootFirstApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SunhomeSpringBootFirstApplication.class, args);
+        // ConfigurableApplicationContext applicationContext = SpringApplication.run(SunhomeSpringBootFirstApplication.class, args);
+//        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(SunhomeSpringBootFirstApplication.class);
+//
+//        TransactionalServiceBean bean = context.getBean(TransactionalServiceBean.class);
+//        bean.save();
+
+
     }
 
     @GetMapping("index")
