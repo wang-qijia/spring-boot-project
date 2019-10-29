@@ -1,4 +1,4 @@
-package com.sunhome.boot;
+package com.sunhome.boot.bootstrap;
 
 import com.sunhome.boot.annotation.EnableHelloWorld;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
