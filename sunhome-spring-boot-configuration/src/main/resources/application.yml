@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: test
+
+---
+## dev
+spring:
+     profiles: dev
+sunhome:
+  sys:
+    name: dev 配置服务
+value:
+  name: dev value注入
+environment:
+  name: dev 编程注入
+
+---
+## test
+spring:
+  profiles: test
+sunhome:
+  sys:
+    name: test 配置服务
+value:
+  name: test value注入
+environment:
+  name: test 编程注入
