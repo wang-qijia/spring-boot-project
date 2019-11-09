@@ -7,6 +7,7 @@
 * 接口编程
     1. 实现 importSelector 返回类全路径，由框架注册到容器
     2. 实现 importBeanDefinitionRegistrar 获取类全路径，开发者自己实现诸如到容器
+    3. 实现 DeferredImportSelector 实现延迟加载，自动装配的核心
 
 
 ## @Bean注入区别

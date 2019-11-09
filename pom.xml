@@ -23,6 +23,7 @@
         <module>sunhome-spring-boot-import</module>
         <module>sunhome-springboot-alias-annotation</module>
         <module>sunhome-spring-boot-actuator</module>
+        <module>sunhome-spring-boot-enable</module>
 
     </modules>
 

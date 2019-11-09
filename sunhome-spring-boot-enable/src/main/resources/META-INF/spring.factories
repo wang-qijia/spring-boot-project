@@ -1,0 +1,3 @@
+# Auto Configuration Import Listeners
+org.springframework.boot.autoconfigure.AutoConfigurationImportListener=\
+com.sunhome.boot.enable.autoconfigure.DefaultAutoConfigurationImportListener
