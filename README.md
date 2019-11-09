@@ -11,9 +11,13 @@
 
 
 ## 构建模块
+* sunhome-spring-boot 依赖-root
+    * sunhome-spring-boot-first-application demo模块
+    * sunhome-spring-boot-configuration 配置模块
+    * sunhome-spring-boot-import import实现模块
+    * sunhome-spring-boot-alias-annotation 注解属性别名模块
+    * sunhome-spring-boot-actuator 监控组件模块
 
-* sunhome-spring-boot-first-application demo模块
-    1. 了解怎么使用它
-    
+
     
 

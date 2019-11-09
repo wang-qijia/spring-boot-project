@@ -20,6 +20,10 @@
     <modules>
         <module>sunhome-spring-boot-first-application</module>
         <module>sunhome-spring-boot-configuration</module>
+        <module>sunhome-spring-boot-import</module>
+        <module>sunhome-springboot-alias-annotation</module>
+        <module>sunhome-spring-boot-actuator</module>
+
     </modules>
 
 
@@ -39,6 +43,11 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+        <!--添加spring boot 基础依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
 
