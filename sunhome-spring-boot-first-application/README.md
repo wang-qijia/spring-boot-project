@@ -30,17 +30,6 @@
  com.sunhome.boot.SunhomeSpringBootFirstApplication$$EnhancerBySpringCGLIB$$9b80c564@71cb3139
 ```
 
-## 生产监控组件
-* spring boot actuator作用   
-    * 监控检查
-    * 应用监控
-    * 指标收集
-* 默认端口
-    * /actuator/health
-     * /actuator/env
-    
-
-
 
 
 

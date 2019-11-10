@@ -17,6 +17,11 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
         <!-- add 配置自动提示工具模块 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

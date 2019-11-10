@@ -24,9 +24,9 @@
         <module>sunhome-springboot-alias-annotation</module>
         <module>sunhome-spring-boot-actuator</module>
         <module>sunhome-spring-boot-enable</module>
+        <module>formatter-sunhome-spring-boot-starter</module>
 
     </modules>
-
 
 
     <properties>
@@ -39,18 +39,16 @@
     </properties>
 
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.20</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <!--添加spring boot 基础依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-    </dependencies>
 
     <repositories>
         <repository>
