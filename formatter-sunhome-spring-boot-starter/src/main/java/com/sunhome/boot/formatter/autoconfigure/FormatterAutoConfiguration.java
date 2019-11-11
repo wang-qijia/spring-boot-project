@@ -1,4 +1,4 @@
-package com.sunhome.boot.autoconfigure.formatter;
+package com.sunhome.boot.formatter.autoconfigure;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;

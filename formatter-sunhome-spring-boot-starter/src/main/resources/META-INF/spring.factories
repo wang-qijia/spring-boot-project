@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
- com.sunhome.boot.autoconfigure.formatter.FormatterAutoConfiguration
+ com.sunhome.boot.formatter.autoconfigure.FormatterAutoConfiguration

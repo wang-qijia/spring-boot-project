@@ -13,19 +13,19 @@
     <groupId>com.sunhome.boot</groupId>
     <artifactId>sunhome-spring-boot</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>sunhome-spring-boot</name>
     <packaging>pom</packaging>
+
+    <name>sunhome-spring-boot</name>
     <description>sunhome-boot 依赖管理</description>
 
     <modules>
         <module>sunhome-spring-boot-first-application</module>
         <module>sunhome-spring-boot-configuration</module>
         <module>sunhome-spring-boot-import</module>
-        <module>sunhome-springboot-alias-annotation</module>
+        <module>sunhome-spring-boot-alias-annotation</module>
         <module>sunhome-spring-boot-actuator</module>
         <module>sunhome-spring-boot-enable</module>
         <module>formatter-sunhome-spring-boot-starter</module>
-
     </modules>
 
 
@@ -58,13 +58,5 @@
         </repository>
     </repositories>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

@@ -1,6 +1,6 @@
 package com.sunhome.boot;
 
-import com.sunhome.boot.autoconfigure.formatter.Formatter;
+import com.sunhome.boot.formatter.autoconfigure.Formatter;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

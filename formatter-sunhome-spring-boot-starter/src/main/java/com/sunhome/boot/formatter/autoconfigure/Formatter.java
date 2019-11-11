@@ -1,4 +1,4 @@
-package com.sunhome.boot.autoconfigure.formatter;
+package com.sunhome.boot.formatter.autoconfigure;
 
 public interface Formatter {
 
