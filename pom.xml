@@ -26,6 +26,7 @@
         <module>sunhome-spring-boot-actuator</module>
         <module>sunhome-spring-boot-enable</module>
         <module>formatter-sunhome-spring-boot-starter</module>
+        <module>sunhome-spring-boot-prometheus-simularor</module>
     </modules>
 
 
