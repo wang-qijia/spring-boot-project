@@ -1,4 +1,4 @@
-# 走进spring-boot 底层实现原理
+# spring-boot实现原理
 
 ## 读懂spring-boot前提条件是熟悉spring-framework实现原理
 
@@ -9,7 +9,6 @@
 * 提供监控组件
 
 
-
 ## 构建模块
 * sunhome-spring-boot 依赖-root
     * sunhome-spring-boot-first-application demo模块
@@ -17,6 +16,10 @@
     * sunhome-spring-boot-import import实现模块
     * sunhome-spring-boot-alias-annotation 注解属性别名模块
     * sunhome-spring-boot-actuator 监控组件模块
+    * formatter-sunhome-spring-boot-starter 自定义start模块
+    * sunhome-spring-boot-prometheus-simularor prometheus 客户端监控模拟器(用于埋点)
+
+
 
 
     

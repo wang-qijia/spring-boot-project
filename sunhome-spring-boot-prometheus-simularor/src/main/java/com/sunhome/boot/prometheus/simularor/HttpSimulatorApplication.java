@@ -3,10 +3,10 @@ package com.sunhome.boot.prometheus.simularor;
 
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.simple.SimpleMeterRegistry;
-import io.micrometer.spring.autoconfigure.MeterRegistryCustomizer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryCustomizer;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Bean;
@@ -31,16 +31,6 @@ public class HttpSimulatorApplication implements ApplicationListener<ContextClos
     public static void main(String[] args) {
 
         SpringApplication.run(HttpSimulatorApplication.class, args);
-    }
-
-    @Bean
-    MeterRegistryCustomizer<MeterRegistry> metricsCommonTags() {
-        return new MeterRegistryCustomizer<MeterRegistry>() {
-            @Override
-            public void customize(MeterRegistry registry) {
-                registry.config().commonTags("application", "actuator-demo");
-            }
-        };
     }
 
     @RequestMapping(value = "/opts")
@@ -72,18 +62,16 @@ public class HttpSimulatorApplication implements ApplicationListener<ContextClos
         return new SimpleAsyncTaskExecutor();
     }
 
-//    @Bean
-//    public CommandLineRunner schedulingRunner(TaskExecutor executor) {
-//        return new CommandLineRunner() {
-//            public void run(String... args) throws Exception {
-//                MeterRegistry meterRegistry = new SimpleMeterRegistry();
-//
-//                simulator = new ActivitySimulator(opts, meterRegistry);
-//                executor.execute(simulator);
-//                System.out.println("Simulator thread started...");
-//            }
-//        };
-//    }
+    @Bean
+    public CommandLineRunner schedulingRunner(TaskExecutor executor) {
+        return new CommandLineRunner() {
+            public void run(String... args) throws Exception {
+                simulator = new ActivitySimulator(opts);
+                executor.execute(simulator);
+                System.out.println("Simulator thread started...");
+            }
+        };
+    }
 
     @Override
     public void onApplicationEvent(ContextClosedEvent event) {

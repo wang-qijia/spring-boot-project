@@ -1,10 +1,8 @@
 package com.sunhome.boot.prometheus.simularor;
 
-import java.util.Random;
-
-import io.micrometer.core.instrument.Counter;
-import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Metrics;
+
+import java.util.Random;
 
 
 public class ActivitySimulator implements Runnable {
@@ -18,7 +16,7 @@ public class ActivitySimulator implements Runnable {
     private volatile boolean shutdown = false;
 
 
-    public ActivitySimulator(SimulatorOpts opts, MeterRegistry meterRegistry) {
+    public ActivitySimulator(SimulatorOpts opts) {
         this.opts = opts;
     }
 
