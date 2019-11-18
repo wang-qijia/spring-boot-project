@@ -6,8 +6,6 @@ import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
-import java.util.Map;
-
 /**
  * @author wangqijia
  * @date 2019/11/18 19:06
@@ -17,12 +15,12 @@ public class ConfigChangeAnnotationListener {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ConfigChangeAnnotationListener.class);
 
+
     @Async
     @EventListener(classes = ConfigChangeEvent.class)
     void onConfigChangeEvent(ConfigChangeEvent event) {
         System.out.println(" @EventListener 声明");
-        Map<String, Object> configChangeInfo = event.getConfigChangeInfo();
-        configChangeInfo.forEach((key, value) -> {
+        event.getConfigChangeInfo().forEach((key, value) -> {
             LOGGER.info("key:{}  value:{}\n", key, value);
         });
     }

@@ -28,4 +28,5 @@ public class EventController {
         System.out.println("publish end");
         return "ok";
     }
+
 }
