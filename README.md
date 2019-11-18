@@ -10,19 +10,16 @@
 
 
 ## 构建模块
-* sunhome-spring-boot 依赖-root 
-    * sunhome-spring-boot-first-application demo模块 ->7
-    * sunhome-spring-boot-configuration 配置模块 ->1
-    * sunhome-spring-boot-import import实现模块 ->2
-    * sunhome-spring-boot-alias-annotation 注解属性别名模块 ->3
-    * sunhome-spring-boot-actuator 监控组件模块  ->6
-    * sunhome-spring-boot-enable 自动装配模块 ->4
-    * formatter-sunhome-spring-boot-starter 自定义start模块  ->5
-    * sunhome-spring-boot-prometheus-simularor prometheus 客户端监控模拟器(用于埋点)  ->8
-
-## 阅读顺序
-模块 -> 数字 代表阅读顺序
-
+* spring-boot-project 依赖-root 
+    * spring-boot-first-application-sample demo模块
+    * spring-boot-configuration-sample 配置模块 
+    * spring-boot-import-sample import实现模块
+    * spring-boot-alias-annotation-sample 注解属性别名模块 
+    * spring-boot-actuator-sample 监控组件模块
+    * spring-boot-enable-sample 自动装配模块 
+    * formatter-spring-boot-starter-sample 自定义start模块 
+    * spring-boot-prometheus-simularor-sample prometheus 客户端监控模拟器(用于埋点) 
+    * spring-boot-context-sample 事件驱动模块
 
 
 
