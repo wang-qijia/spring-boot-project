@@ -25,6 +25,7 @@ public class EventController {
         configMap.put("name", "lisha");
         configMap.put("age", "18");
         eventPublisher.publishEvent(new ConfigChangeEvent(configMap));
+        System.out.println("publish end");
         return "ok";
     }
 }
