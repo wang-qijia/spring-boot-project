@@ -1,6 +1,8 @@
 # spring-boot实现原理
 
-## 读懂spring-boot前提条件是熟悉spring-framework实现原理
+## 前提条件
+* 掌握 spring-framework 、Ioc/Aop
+
 
 ## spring-boot 特性
 * 独立应用
